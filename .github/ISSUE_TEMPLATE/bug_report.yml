@@ -1,0 +1,60 @@
+name: Bug Report
+description: To add a bug report ticket
+body:
+  - type: textarea
+    id: descriptions
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: To Reproduce
+      description: |
+        Steps to reproduce the behaviour:
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+      value: |
+       1. 
+       2. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected behaviour
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: If applicable, add logs to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: |
+        - Device: [e.g. Desktop, Mobile, Tablet or specific device e.g. Macbook Pro]
+        - OS: [e.g. Linux, Windows, macOS, Android, iOS]
+        - Browser and version: [e.g. chrome v100, safari v15]
+      value: |
+      - Device: 
+      - OS:
+      - Browser and version:
+    validations:
+      required: true

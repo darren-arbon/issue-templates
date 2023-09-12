@@ -1,0 +1,28 @@
+name: Miscellaneous Ticket
+description: To add a ticket that does not fit into any of the other categories
+body:
+  - type: textarea
+    id: background-context
+    attributes:
+      label: Background/Context
+      description: Background to the reason for this issue. Please keep this simple and concise.
+      placeholder: Give some background to the issue
+    validations:
+      required: true
+  - type: textarea
+    id: work-required
+    attributes:
+      label: Work required
+      description: What are we trying to research/investigate/change?
+      placeholder: What is the work required
+    validations:
+      required: true
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Outcomes/Definition of Done
+      description: |
+        What is the expected output of this ticket?
+        How do we know that the ticket is complete?
+    validations:
+      required: true
