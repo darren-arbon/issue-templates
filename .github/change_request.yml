@@ -1,0 +1,41 @@
+name: Change Request v2
+description: To add a change request ticket
+body:
+  - type: textarea
+    id: background-context
+    attributes:
+      label: Background/Context
+      description: Background to the reason for this issue. Please keep this simple and concise.
+      placeholder: Give some background to the issue
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Change
+      description: |
+        - What is the justification for the change?
+        - What is the impact of this change for the user?
+        - Are there any UX mockups or designs?
+        - Does the change depend on a change or require feedback from another team?
+        - Does the change require any new events setting up in Pendo?
+        - Does the change require customer comms?
+      placeholder: What is the change that is needed
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        What is the expected behaviour/outcome of this change?
+        If this is a functional change, please describe the steps to reproduce the behaviour.
+        It may be helpful to use the [Gherkin Syntax](https://cucumber.io/docs/gherkin/reference/) to describe your steps:
+      value: |
+        ```Gherkin
+        Given
+        When
+        Then
+        ```
+    validations:
+      required: true
